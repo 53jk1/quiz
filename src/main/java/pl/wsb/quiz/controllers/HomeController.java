@@ -11,12 +11,12 @@ public class HomeController {
 
     @GetMapping("/{id}")
     public String home(@PathVariable int id) {
-        return "Wynik" + id;
+        return "Score " + id;
     }
 
     @GetMapping("/calculator")
     public String calculator(@RequestParam int a, @RequestParam int b) {
-        return "Wynik " + (a+b);
+        return "Score " + (a+b);
     }
 
 }
